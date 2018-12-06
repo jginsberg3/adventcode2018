@@ -1,0 +1,21 @@
+plot is AT LEAST 1000x1000, could be bigger
+
+how to label each point on the plot?
+  - each point could have it's own number: (0000, 0001, 0002, etc.)
+  - could label by (column, row): (0,0), (0,1), (0,10), (1,0), (1,1), (1,2)
+
+need a function that takes in a record, and returns the plot labels
+  ex: INPUT:: "#1 @ 935,649: 22x22" -> OUTPUT:: [(0,0), (0,1), (0,2), (1,0)]
+
+keep track of all the outputs from that function
+then go through all the outputs and find where a point (ex: (12,3)) is included in at least 2 outputs
+ex:
+INPUT::
+  output1 = [(0,0), (0,1), (0,2), (1,0)]
+  output2 = [(1,1), (1,2), (0,3), (1,0)]
+  output3 = [(9,9), (8,9), (0,3), (8,8)]
+
+OUTPUT::
+  [(1,0), (0,3)]
+  - because (1,0) in output1 and output2
+  - because (0,3) in output2 and output3
