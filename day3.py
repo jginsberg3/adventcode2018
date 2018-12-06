@@ -1,7 +1,7 @@
 
 # read in data
 ###### JG NOTE: CHANGE THIS TO READ FROM DATA FOLDER ONCE MOVE IT THERE!!!!!!!!!
-with open('day3_data.txt' ,'r') as f:
+with open('data/day3_data.txt' ,'r') as f:
     claims = [line.strip() for line in f.readlines()]
 
 
