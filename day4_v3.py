@@ -1,3 +1,7 @@
+# i couldn't figure this one out so i relied quiet heavily on the solution here:
+# https://github.com/joelgrus/advent2018/blob/master/day04_repose_record.py
+
+
 RAW = """[1518-11-01 00:00] Guard #10 begins shift
 [1518-11-01 00:05] falls asleep
 [1518-11-01 00:25] wakes up
